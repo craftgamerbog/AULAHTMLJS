@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #111827;
+  /* pesquisar como colocar dois valores no padding abaixo */
+  padding: 25px 35px;
+  border: radius 10px;
+  box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5); /* Degradê no formulário */
+  max-width: 500px;
+  background: linear-gradient(to bottom, black,);
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: #f00808;
+}
+
+header p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+p {
+  color: red;
+}
+.form-cadastro {
+  display: flex;
+  /* presquisar o que é o flex direction */
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  font: size 14px;
+  margin: bottom 4px;
+  color: rgb(161, 161, 161);
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #1f2937;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #fd0000;
+  border-color: #fa0a0a;
+}
+textarea {
+  resize: vertical;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #f00505;
+  color: #fff;
+  border: black;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #fa0303;
+}

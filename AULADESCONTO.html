@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Curso de Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de Desconto</h1>
+            <p>Preencha primeiro o valor do produto e depois o desconto.</p>
+        </header>
+
+        <form class="form-cadastro">
+            <label for="valor">Valor do produto:</label>
+            <input type="number" id="valor" name="valor" required>
+
+            <label for="Desconto">Porcentagem do desconto:</label>
+            <input type="number" id="Desconto" name="Desconto" required>
+
+            <button onclick="realizarSoma()">Realizar operação</button>
+              <p id="resultadoTela"></p>
+        </form>
+    </div>
+
+    <script>
+        function realizarSoma() {
+                event.preventDefault();
+            let valor = Number(document.getElementById("valor").value);
+            let desconto = Number(document.getElementById("Desconto").value);
+            let resultado = (valor * desconto / 100);
+       document.getElementById("resultadoTela").innerText = `Resultado: ${resultado}`;
+        }
+    </script>
+</body>
+
+</html>
